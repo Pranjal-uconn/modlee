@@ -75,7 +75,7 @@ class Recommender(object):
         :param dataloader: The dataloader to analyze. If not given, tries to use the class dataloader.
         """
         if not dataloader:
-            dataloader = self.dataloader
+            dataloader = self.dataloaderteam
         self.dataloader = dataloader
         if not dataloader:
             raise Exception(f'Dataloader not provided and not previously set.')
